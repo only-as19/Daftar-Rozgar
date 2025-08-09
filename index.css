@@ -701,3 +701,91 @@ main{
     transform: translateY(-5px);
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
   }
+
+/* Middle Section */
+.footer-middle {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+.footer-links {
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+
+
+.footer-links a:hover{
+    scale: 1.1;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+}
+
+.contact h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact1 {
+    margin-top: 20px;
+}
+
+.contact-type {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid #112f55;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    color: #112f55;
+}
+
+.contact-box:hover {
+    background-color: #112f55;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact-icon {
+    font-size: 2rem;
+}
