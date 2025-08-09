@@ -115,3 +115,37 @@ nav {
     background: #112f55;
     border-radius: 3px;
 }
+
+
+/* MAIN SECTION */
+
+main{
+    margin-top: 20px;
+    background: #eaedf2;
+}
+
+.text-type{
+    text-align: center;
+}
+
+.text-type span{
+    font-size: 2rem;
+    font-family: "Rubik", serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.text-type span::before{
+    content: "Welcome To DAFTER ROZGAR";
+}
+
+.text-type span::after{
+    content: "";
+    width: calc(100% + 8px);
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    border-left: 2px solid black;
+    right: -8px;
+    animation: blink 0.8s infinite,typing 20s steps(15) infinite;
+}
