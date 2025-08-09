@@ -789,3 +789,19 @@ main{
 .contact-icon {
     font-size: 2rem;
 }
+
+/* Bottom Section */
+.footer-bottom hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
