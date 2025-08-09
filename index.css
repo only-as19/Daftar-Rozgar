@@ -503,3 +503,125 @@ main{
     font-size: 3rem;
   }
   
+
+   
+.terms {
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    
+}
+
+.term-h h1 {
+    font-size: 3rem;
+}
+
+.term-h {
+    text-align: center;
+}
+
+.term-h p {
+    font-size: 20px;
+}
+
+.terms-btn {
+    height: 60px;
+    width: 160px;
+    background: #112f55;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.term-b {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.terms-container {
+    margin-top: 20px;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+    width: 90%;
+}
+
+.terms-eml {
+    display: none;
+}
+
+.terms-header {
+    background: #112f55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.terms-content {
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.terms-content p {
+    margin-bottom: 15px;
+}
+
+.terms-content ol {
+    margin-left: 20px;
+}
+
+.terms-content ol li {
+    margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.terms-content li {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.show1 {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.show2 {
+    display: block;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
