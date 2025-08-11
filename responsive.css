@@ -1,0 +1,305 @@
+@media (max-width: 850px) {
+  .nav-options {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    background: #ffffff;
+    width: 140px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .nav-options.active {
+    display: flex;
+  }
+
+  .nav-options ul {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+  .nav-logo a{
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .cv {
+    display: flex; /* Ensure "Upload CV" is displayed within the menu */
+    height: 50px;
+    width: 140px;
+    font-size: 15px;
+  }
+
+  .uoload-icon img {
+    height: 20px;
+  }
+
+  .nav-link a {
+    font-size: 17px;
+  }
+
+  .about-h {
+    font-size: 39px;
+  }
+  .term-h h1 {
+    font-size: 30px;
+  }
+
+  .text-type span {
+    font-size: 25px;
+  }
+  .term-h p {
+    font-size: 1rem;
+  }
+
+  .terms-condition {
+    justify-content: center;
+  }
+  .terms-btn {
+    height: 50px;
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .term-b {
+    gap: 10px;
+  }
+
+  .terms-header {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  .terms-content {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+  .service1-name h1 {
+    font-size: 40px;
+  }
+
+  .service-box {
+    height: 350px;
+    width: 250px; /* Reduce width */
+  }
+
+  .service-name {
+    font-size: 24px;
+  }
+
+  .service-detail {
+    font-size: 0.9rem;
+  }
+
+  .about-text {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .about-img {
+    height: 300px; /* Adjust image size */
+    margin: 0px 20px 0 0;
+  }
+  .main-sections {
+    flex-wrap: wrap;
+  }
+
+  .employees,
+  .employeers {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .emp-t h1 {
+    font-size: 40px;
+  }
+
+  .emp-t p {
+    font-size: 0.9rem;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+/* Responsive Styles for Less than 400px */
+@media (max-width: 500px) {
+  nav {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-options ul {
+    gap: 10px; /* Reduce the gap between menu items */
+  }
+
+  .nav-logo a{
+    font-size: 1rem;
+  }
+
+  .cv {
+    width: 130px; /* Make "Upload CV" button slightly smaller */
+  }
+
+  .cv-upload {
+    font-size: 14px; /* Adjust text size within the "Upload CV" button */
+  }
+  .term-h h1 {
+    font-size: 20px;
+  }
+
+  .term-h p {
+    font-size: 14px;
+  }
+
+  .terms-btn {
+    height: 40px;
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .term-b {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .terms-header {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .terms-content {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  .service1-name h1 {
+    font-size: 30px;
+  }
+
+  .service-box {
+    width: 90%; /* Full width for small screens */
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .service-name {
+    font-size: 20px;
+  }
+
+  .service-detail {
+    font-size: 0.8rem;
+  }
+
+  .serviceicon {
+    height: 120px;
+    width: 120px;
+  }
+
+  .serviceicon img {
+    height: 60px;
+  }
+  .about-us {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .about-text {
+    width: 90%; /* Full width for text */
+    margin-top: 15px;
+  }
+
+  .about-img {
+    height: 200px; /* Smaller image size */
+    margin: 0;
+  }
+
+  .about-h {
+    font-size: 30px; /* Smaller heading */
+  }
+  .main-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employees,
+  .employeers {
+    width: 90%;
+    height: auto;
+  }
+
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .job-box {
+    padding: 15px;
+  }
+
+  .emp-t h1 {
+    font-size: 30px;
+  }
+
+  .emp-t p {
+    font-size: 0.8rem;
+  }
+
+  .form-btn button {
+    width: 140px;
+    font-size: 0.9rem;
+  }
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+
+  .blue-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-box {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .footer-logo a{
+    font-size: 1rem;
+  }
+   
+  .footer-links li {
+    font-size: 12px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
