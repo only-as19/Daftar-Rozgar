@@ -101,3 +101,95 @@ nav {
   background: #112f55;
   border-radius: 3px;
 }
+
+main {
+  background: #eaedf2;
+  padding: 5px 0px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #112f55;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  flex: 1;
+}
+
+input,
+textarea,
+button {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #112f55;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0d243f;
+}
+
+.red {
+  color: red;
+}
+.footer {
+  text-align: center;
+  /* padding: 20px; */
+  background-color: #112f55;
+  color: white;
+  font-family: "poppins", sans-serif;
+  margin-top: 20px;
+}
