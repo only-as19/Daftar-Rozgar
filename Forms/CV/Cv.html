@@ -48,7 +48,69 @@
         </div>
       </nav>
     </header>
-    
+    <main>
+      <div class="form-container">
+        <h2>CV Submission</h2>
+        <p>Do you want to work with us? Please fill in your details below.</p>
+        <form
+          method="POST"
+          action="https://formsubmit.co/653f63c2022fe8db22ac3b5d18bca0d5"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="firstName">First Name <span class="red">*</span></label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name <span class="red">*</span></label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="red">*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="position">Position Applying For</label>
+            <input type="text" id="position" name="position" />
+          </div>
+
+          <div class="form-group">
+            <label for="additionalInfo">Additional Information</label>
+            <textarea
+              id="additionalInfo"
+              name="additionalInfo"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="cvFile">Upload your CV Here</label>
+            <input
+              type="file"
+              id="cvFile"
+              name="cvFile"
+              accept="image/png, image/jpeg, .pdf "
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="testimonials">CNIC</label>
+            <input
+              type="file"
+              id="testimonials"
+              name="CNIC"
+              accept="image/png, image/jpeg"
+            />
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </main>
 
     <hr />
     <footer class="footer">
