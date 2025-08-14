@@ -101,4 +101,32 @@
   .cv-upload {
     font-size: 14px; /* Adjust text size within the "Upload CV" button */
   }
+  .form-container {
+    max-width: 100%;
+    margin: 5px;
+    padding: 15px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  label {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 90%;
+    flex: none;
+  }
+
+  button {
+    padding: 12px;
+  }
 }
