@@ -232,3 +232,175 @@ button:hover {
   font-size: 10px;
   color: red;
 }
+
+
+.footer {
+  text-align: center;
+  /* padding: 20px; */
+  background-color: #112f55;
+  color: white;
+  font-family: "poppins", sans-serif;
+  margin-top: 20px;
+}
+
+/* Top Section */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: white;
+}
+
+.footer-logo img {
+  height: 130px;
+}
+
+.footer-logo a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.social {
+  height: 100%;
+}
+
+.icon-red {
+  background-color: red;
+}
+.icon-green {
+  background-color: rgb(47, 208, 106);
+}
+
+.icon-blue {
+  background-color: #007bff;
+}
+
+.blue-circle {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.blue-circle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Middle Section */
+.footer-middle {
+  margin-bottom: 20px;
+}
+
+.footer-middle {
+  margin-bottom: 20px;
+  border-top-right-radius: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.footer-links a:hover {
+  scale: 1.1;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.contact h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact1 {
+  margin-top: 20px;
+}
+
+.contact-type {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  transition: all 0.5s ease-in-out;
+  color: #112f55;
+}
+
+.contact-box:hover {
+  background-color: #112f55;
+  color: white;
+}
+
+.contact-icon {
+  font-size: 2rem;
+}
+
+/* Bottom Section */
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #777;
+}
