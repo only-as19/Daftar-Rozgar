@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-family: "Poppins", sans-serif;
+}
+
+/* General Styling */
+nav {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-logo img {
+  height: 100px;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-direction: row;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-options ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #0000008c;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  background: #112f55;
+  transition: width 0.3s ease;
+}
+
+.nav-link a:hover::after {
+  width: 100%;
+}
+
+.cv {
+  height: 60px;
+  width: 160px;
+  background: #112f55;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add spacing when in column layout */
+}
+
+.cv-upload {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.cv:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background: #112f55;
+  border-radius: 3px;
+}
