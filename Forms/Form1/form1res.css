@@ -144,5 +144,94 @@
       font-size: 0.9rem;
     }
 
-    
+    .form-container {
+      padding: 10px;
+    }
+
+    .form-group {
+      gap: 5px;
+    }
+
+    label {
+      font-size: 12px;
+    }
+
+    input, textarea, select {
+      font-size: 12px;
+      padding: 6px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 6px;
+    }
+    .footer-logo h2 {
+      font-size: 20px;
+  }
+
+  .blue-circle {
+      width: 30px;
+      height: 30px;
+  }
+
+  .contact-box {
+      width: 250px;
+      height: auto;
+      padding: 15px;
+  }
+
+  .footer-logo a{
+    font-size: 1rem;
+  }
+
+  .footer-links li {
+      font-size: 12px;
+  }
+
+  iframe {
+      width: 100%;
+      height: 250px;
+  }
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .form-container {
+      padding: 10px;
+    }
+
+    .form-group {
+      gap: 5px;
+    }
+
+    label {
+      font-size: 12px;
+    }
+
+    input, textarea, select {
+      font-size: 12px;
+      padding: 6px;
+    }
+
+    .terms-container {
+      padding: 10px;
+    }
+
+    .terms-header {
+      font-size: 1rem;
+      padding: 10px;
+    }
+
+    .terms-content {
+      font-size: 12px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 6px;
+    }
   }
