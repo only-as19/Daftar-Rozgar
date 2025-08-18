@@ -1,0 +1,52 @@
+@media (max-width: 850px) {
+    
+    .nav-options {
+      display: none;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  background: #ffffff;
+  width: 140px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  }
+
+  .nav-options.active {
+      display: flex;
+  }
+
+  .nav-options ul {
+      flex-direction: column;
+      gap: 15px;
+      margin: 0;
+  }
+
+  .nav-logo a{
+    font-size: 20px;
+  }
+  
+  
+  .hamburger {
+      display: flex;
+  }
+  .cv{
+      display: flex; /* Ensure "Upload CV" is displayed within the menu */
+      height: 50px;
+  width: 140px;
+  font-size: 15px;
+  }
+  .uoload-icon img{
+      height: 20px;
+
+  }
+
+  .nav-link a{
+      font-size: 17px;
+  }
+    
+  }
