@@ -115,3 +115,34 @@
       height: 300px;
   }
   }
+
+  @media (max-width: 500px)
+   {
+    nav {
+      padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-logo a{
+    font-size: 1rem;
+  }
+  .nav-options ul {
+      gap: 10px; /* Reduce the gap between menu items */
+  }
+
+  .cv {
+      width: 130px; /* Make "Upload CV" button slightly smaller */
+  }
+
+  .cv-upload {
+      font-size: 14px; /* Adjust text size within the "Upload CV" button */
+  }
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    
+  }
