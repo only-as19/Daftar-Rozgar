@@ -373,6 +373,35 @@
         <p>Copyright 2019. All Rights Reserved.</p>
       </div>
     </footer>
-    
+    <script>
+      // Select the hamburger and nav options
+      const hamburger = document.querySelector(".hamburger");
+      const navOptions = document.querySelector(".nav-options");
+
+      // Add click event to toggle the menu visibility
+      hamburger.addEventListener("click", () => {
+        navOptions.classList.toggle("active");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("jobForm");
+        const checkbox = document.getElementById("termsCheckbox");
+        const error = document.getElementById("error");
+
+        // Validate form on submit
+        form.addEventListener("submit", function (event) {
+          if (!checkbox.checked) {
+            error.textContent = "Please agree to the terms and conditions.";
+            event.preventDefault(); // Prevent form submission
+          } else {
+            error.textContent = "";
+          }
+        });
+
+        // Clear error message when checkbox is clicked
+        checkbox.addEventListener("click", function () {
+          error.textContent = "";
+        });
+      });
+    </script>
   </body>
 </html>
