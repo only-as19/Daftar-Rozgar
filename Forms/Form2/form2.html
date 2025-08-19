@@ -48,7 +48,173 @@
         </div>
       </nav>
     </header>
-    
+    <main>
+      <div class="form-container">
+        <h2>Staff Deployment Form</h2>
+        <p>Please fill in the required information below.</p>
+        <form
+          id="staffForm"
+          method="POST"
+          action="https://formsubmit.co/653f63c2022fe8db22ac3b5d18bca0d5"
+          enctype="multipart/form-data"
+        >
+          <h3>Client Information</h3>
+          <div class="form-group">
+            <label for="clientName">Name <span class="red">*</span></label>
+            <input
+              type="text"
+              id="clientName"
+              name="clientName"
+              placeholder="Enter client's name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="companyName"
+              >Company Name <span class="red">*</span></label
+            >
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              placeholder="Enter company name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="2"
+              placeholder="Enter company address"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone <span class="red">*</span></label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter contact number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="red">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+
+          <h3>Staff Requirements</h3>
+          <div class="form-group">
+            <label for="jobTitle">Job Title <span class="red">*</span></label>
+            <input
+              type="text"
+              id="jobTitle"
+              name="jobTitle"
+              placeholder="Enter job title"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="staffNumber">Number of Staff Required</label>
+            <input
+              type="number"
+              id="staffNumber"
+              name="staffNumber"
+              placeholder="Enter number of staff required"
+            />
+          </div>
+          <div class="form-group">
+            <label for="skills">Desired Skills</label>
+            <textarea
+              id="skills"
+              name="skills"
+              rows="2"
+              placeholder="Enter desired skills"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="hours">Working Hours</label>
+            <input
+              type="text"
+              id="hours"
+              name="hours"
+              placeholder="Enter working hours"
+            />
+          </div>
+          <div class="form-group">
+            <label for="instructions">Special Instructions</label>
+            <textarea
+              id="instructions"
+              name="instructions"
+              rows="2"
+              placeholder="Enter any special instructions"
+            ></textarea>
+          </div>
+
+          <h3>Payment Details</h3>
+          <div class="form-group">
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" name="paymentMethod">
+              <option value="EasyPaisa">EasyPaisa</option>
+              <option value="JazzCash">JazzCash</option>
+            </select>
+          </div>
+          
+          <div class="number">
+            <p>JazzCash & EasyPaisa Number</p>
+            <p>03007402258</p>
+          </div>
+          <div class="form-group">
+            <label for="paymentDate"
+              >Payment Date <span class="red">*</span></label
+            >
+            <input type="date" id="paymentDate" name="paymentDate" required />
+          </div>
+          <div class="form-group">
+            <label for="paymentAmount"
+              >Payment Amount <span class="red">*</span></label
+            >
+            <input
+              type="text"
+              id="paymentAmount"
+              name="paymentAmount"
+              value="Rs. 5,000"
+              readonly
+            />
+          </div>
+          <div class="form-group">
+            <label for="testimonials">CNIC</label>
+            <input
+              type="file"
+              id="testimonials"
+              name="CNIC"
+              accept="image/png, image/jpeg, .pdf"
+              required
+            />
+          </div>
+            <div class="form-group">
+              <label for="Receipt">Receipt</label>
+              <input
+                type="file"
+                id="testimonials"
+                name="Receipt"
+                accept="image/png, image/jpeg, .pdf"
+                required
+              />
+            </div>
+          
+          
+        </form>
+      </div>
+    </main>
 
     <footer class="footer">
       <!-- Top Section: Logo and Social Icons -->
