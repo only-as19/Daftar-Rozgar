@@ -1,0 +1,242 @@
+@media (max-width: 850px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-group {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .terms-container {
+    padding: 15px;
+  }
+
+  .terms-header {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .nav-options {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    background: #ffffff;
+    width: 140px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  .nav-logo a{
+    font-size: 20px;
+  }
+  .nav-options.active {
+    display: flex;
+  }
+
+  .nav-options ul {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .cv {
+    display: flex; /* Ensure "Upload CV" is displayed within the menu */
+    height: 50px;
+    width: 140px;
+    font-size: 15px;
+  }
+  .uoload-icon img {
+    height: 20px;
+  }
+
+  .nav-link a {
+    font-size: 17px;
+  }
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-group {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-logo a{
+    font-size: 1rem;
+  }
+
+  .nav-options ul {
+    gap: 10px; /* Reduce the gap between menu items */
+  }
+
+  .cv {
+    width: 130px; /* Make "Upload CV" button slightly smaller */
+  }
+
+  .cv-upload {
+    font-size: 14px; /* Adjust text size within the "Upload CV" button */
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-group {
+    gap: 5px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+
+.footer-logo a{
+    font-size: 1rem;
+  }
+  .blue-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-box {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .footer-links li {
+    font-size: 12px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-group {
+    gap: 5px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .terms-container {
+    padding: 10px;
+  }
+
+  .terms-header {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .terms-content {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
