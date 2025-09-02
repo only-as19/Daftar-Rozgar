@@ -1,113 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Job Preferences Form</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="from1.css">
-  <link rel="stylesheet" href="form1res.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-logo">
-        <a href="../../index.html">
-          <img src="logo.png" alt="Company Logo" />
-          دفتر روزگار گوجرانوالہ
-        </a>
-      </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="nav-options hidden">
-        <ul>
-          <li class="nav-link"><a href="../../index.html">Home</a></li>
-          <li class="nav-link"><a href="../../index.html#about">About Us</a></li>
-          <li class="nav-link"><a href="../../index.html#service">Our Services</a></li>
-          <li class="nav-link"><a href="../../index.html#contact">Contact Us</a></li>
-        </ul>
-        <div class="cv">
-          <a href="../CV/Cv.html" class="cv-upload">
-            <div class="upload-icon">
-              <img
-                src="https://www.ditrc.com/assets/images/upload-icon.png"
-                alt="Upload Icon"
-              />
-            </div>
-            <span>Upload CV</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Preferences Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="from1.css" />
+    <link rel="stylesheet" href="form1res.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="../../index.html">
+            <img src="../../img/logo.png" alt="Company Logo" />
+            دفتر روزگار گوجرانوالہ
           </a>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="form-container">
-      <h2>Job Preferences Form</h2>
-      <p>Please fill in your job preferences below.</p>
-      <form id="jobForm" onsubmit="return validateForm()" method="POST"
-      action="https://formsubmit.co/653f63c2022fe8db22ac3b5d18bca0d5"
-      enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="name">Name <span class="red">*</span></label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-  
-        <div class="form-group">
-          <label for="contact">Contact Number <span class="red">*</span></label>
-          <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+        <div class="nav-options hidden">
+          <ul>
+            <li class="nav-link"><a href="../../index.html">Home</a></li>
+            <li class="nav-link">
+              <a href="../../index.html#about">About Us</a>
+            </li>
+            <li class="nav-link">
+              <a href="../../index.html#service">Our Services</a>
+            </li>
+            <li class="nav-link">
+              <a href="../../index.html#contact">Contact Us</a>
+            </li>
+          </ul>
+          <div class="cv">
+            <a href="../CV/Cv.html" class="cv-upload">
+              <div class="upload-icon">
+                <img
+                  src="https://www.ditrc.com/assets/images/upload-icon.png"
+                  alt="Upload Icon"
+                />
+              </div>
+              <span>Upload CV</span>
+            </a>
+          </div>
         </div>
-  
-        <div class="form-group">
-          <label for="email">Email Address <span class="red">*</span></label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
-  
-        <div class="form-group">
-          <label for="occupation">Current Occupation</label>
-          <input type="text" id="occupation" name="occupation" placeholder="Enter your current occupation">
-        </div>
-  
-        <div class="form-group">
-          <label for="jobTitle">Desired Job Title</label>
-          <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter desired job title">
-        </div>
-  
-        <div class="form-group">
-          <label for="industry">Industry</label>
-          <input type="text" id="industry" name="industry" placeholder="Enter preferred industry">
-        </div>
-  
-        <div class="form-group">
-          <label for="location">Location</label>
-          <input type="text" id="location" name="location" placeholder="Enter preferred location">
-        </div>
-  
-        <div class="form-group">
-          <label for="salary">Salary Range</label>
-          <input type="text" id="salary" name="salary" placeholder="Enter preferred salary range">
-        </div>
-  
-        <div class="form-group">
-          <label for="jobType">Job Type</label>
-          <select id="jobType" name="jobType">
-            <option value="full-time">Full-time</option>
-            <option value="part-time">Part-time</option>
-          </select>
-        </div>
-  
-        <div class="form-group">
-          <label for="education">Education</label>
-          <input type="text" id="education" name="education" placeholder="Enter your education">
-        </div>
-  
-        <div class="form-group">
-          <label for="skills">Relevant Skills</label>
-          <textarea id="skills" name="skills" rows="3" placeholder="Enter your skills"></textarea>
-        </div>
-        <h3>Payment Details</h3>
+      </nav>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Job Preferences Form</h2>
+        <p>Please fill in your job preferences below.</p>
+        <form
+          id="jobForm"
+          onsubmit="return validateForm()"
+          method="POST"
+          action="https://formsubmit.co/653f63c2022fe8db22ac3b5d18bca0d5"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label for="name">Name <span class="red">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact"
+              >Contact Number <span class="red">*</span></label
+            >
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="Enter your contact number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="red">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="occupation">Current Occupation</label>
+            <input
+              type="text"
+              id="occupation"
+              name="occupation"
+              placeholder="Enter your current occupation"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="jobTitle">Desired Job Title</label>
+            <input
+              type="text"
+              id="jobTitle"
+              name="jobTitle"
+              placeholder="Enter desired job title"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="industry">Industry</label>
+            <input
+              type="text"
+              id="industry"
+              name="industry"
+              placeholder="Enter preferred industry"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Enter preferred location"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="salary">Salary Range</label>
+            <input
+              type="text"
+              id="salary"
+              name="salary"
+              placeholder="Enter preferred salary range"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="jobType">Job Type</label>
+            <select id="jobType" name="jobType">
+              <option value="full-time">Full-time</option>
+              <option value="part-time">Part-time</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="education">Education</label>
+            <input
+              type="text"
+              id="education"
+              name="education"
+              placeholder="Enter your education"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="skills">Relevant Skills</label>
+            <textarea
+              id="skills"
+              name="skills"
+              rows="3"
+              placeholder="Enter your skills"
+            ></textarea>
+          </div>
+          <h3>Payment Details</h3>
           <div class="form-group">
             <label for="paymentMethod">Payment Method</label>
             <select id="paymentMethod" name="paymentMethod">
@@ -115,7 +186,7 @@
               <option value="JazzCash">JazzCash</option>
             </select>
           </div>
-          
+
           <div class="number">
             <p>JazzCash & EasyPaisa Number</p>
             <p>03007402258</p>
@@ -148,156 +219,208 @@
               required
             />
           </div>
-            <div class="form-group">
-              <label for="Receipt">Receipt</label>
-              <input
-                type="file"
-                id="testimonials"
-                name="Receipt"
-                accept="image/png, image/jpeg, .pdf"
-                required
-              />
-            </div>
-  
-        <div class="center">
-          <div class="terms-container">
-            <div class="terms-header">Terms and Conditions</div>
-            <div class="terms-content">
-              <p><strong>Terms and Conditions for Employee:</strong></p>
-              <ol>
-                <li>These terms and conditions ("Terms") govern the employment promotion services provided by Dafter Rozgar to job seekers.</li>
-                <li>Dafter Rozgar agrees to provide job opportunities to the Client for a period of three (3) months from the date of payment.</li>
-                <li>Payment Terms: The Client agrees to pay a non-refundable fee of Rs. 5,000 (Rupees Five Thousand Only).</li>
-                <li>Payment shall be made through bank transfer or online payment gateway.</li>
-                <li>Dafter Rozgar shall place the Client in a job within ten (10) working days from the date of payment.</li>
-                <li>Dafter Rozgar guarantees the job placement, however, the Client acknowledges that Dafter Rozgar cannot guarantee the job's duration or terms.</li>
-                <li>These Terms shall be governed by and construed in accordance with the laws of Pakistan.</li>
-                <li>Any disputes arising out of this agreement shall be resolved in District and Session Court Gujranwala only.</li>
-            </ol>
+          <div class="form-group">
+            <label for="Receipt">Receipt</label>
+            <input
+              type="file"
+              id="testimonials"
+              name="Receipt"
+              accept="image/png, image/jpeg, .pdf"
+              required
+            />
+          </div>
+
+          <div class="center">
+            <div class="terms-container">
+              <div class="terms-header">Terms and Conditions</div>
+              <div class="terms-content">
+                <p><strong>Terms and Conditions for Employee:</strong></p>
+                <ol>
+                  <li>
+                    These terms and conditions ("Terms") govern the employment
+                    promotion services provided by Dafter Rozgar to job seekers.
+                  </li>
+                  <li>
+                    Dafter Rozgar agrees to provide job opportunities to the
+                    Client for a period of three (3) months from the date of
+                    payment.
+                  </li>
+                  <li>
+                    Payment Terms: The Client agrees to pay a non-refundable fee
+                    of Rs. 5,000 (Rupees Five Thousand Only).
+                  </li>
+                  <li>
+                    Payment shall be made through bank transfer or online
+                    payment gateway.
+                  </li>
+                  <li>
+                    Dafter Rozgar shall place the Client in a job within ten
+                    (10) working days from the date of payment.
+                  </li>
+                  <li>
+                    Dafter Rozgar guarantees the job placement, however, the
+                    Client acknowledges that Dafter Rozgar cannot guarantee the
+                    job's duration or terms.
+                  </li>
+                  <li>
+                    These Terms shall be governed by and construed in accordance
+                    with the laws of Pakistan.
+                  </li>
+                  <li>
+                    Any disputes arising out of this agreement shall be resolved
+                    in District and Session Court Gujranwala only.
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
-        </div>
-        <label>
-          <input type="checkbox" id="termsCheckbox">
-          I agree to the terms and conditions.
-        </label>
-        <span id="error"></span>
-        <button type="submit">Submit Preferences</button>
-      </form>
-    </div>
-  </main>
-  
-  <footer class="footer">
-    <!-- Top Section: Logo and Social Icons -->
-    <div class="footer-top">
-      <div class="footer-logo">
-        <a href="../../index.html">
-          <img src="logo.png" alt="" />
-          دفتر روزگار گوجرانوالہ
-        </a>
+          <label>
+            <input type="checkbox" id="termsCheckbox" />
+            I agree to the terms and conditions.
+          </label>
+          <span id="error"></span>
+          <button type="submit">Submit Preferences</button>
+        </form>
       </div>
-        <ul class="social-icons">
-          <li class="blue-circle icon-red"><a href="https://www.instagram.com/dafterrozgar8?igsh=b3RnbTh3Njdtejhx"><img class="social" src="Instagram.png" alt=""></a></li>
-          <li class="blue-circle icon-blue"><a href="https://www.facebook.com/share/noMdpjfnZV93rEJE/?mibextid=wwXIfr "><img class="social" src="Facebook.png" alt=""></a></li>
-          <li class="blue-circle icon-green"><a href="https://wa.me/03007402258?text=Hello!" target="_blank"><img class="social" src="WhatsApp.png" alt=""></a></li>
-            
-            
-        </ul>
-    </div>
+    </main>
 
-    <!-- Middle Section: Links -->
-    <div class="footer-middle">
+    <footer class="footer">
+      <!-- Top Section: Logo and Social Icons -->
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="../../index.html">
+            <img src="logo.png" alt="" />
+            دفتر روزگار گوجرانوالہ
+          </a>
+        </div>
+        <ul class="social-icons">
+          <li class="blue-circle icon-red">
+            <a
+              href="https://www.instagram.com/dafterrozgar8?igsh=b3RnbTh3Njdtejhx"
+              ><img class="social" src="../../img/Instagram.png" alt=""
+            /></a>
+          </li>
+          <li class="blue-circle icon-blue">
+            <a
+              href="https://www.facebook.com/share/noMdpjfnZV93rEJE/?mibextid=wwXIfr "
+              ><img class="social" src="../../img/Facebook.png" alt=""
+            /></a>
+          </li>
+          <li class="blue-circle icon-green">
+            <a href="https://wa.me/03007402258?text=Hello!" target="_blank"
+              ><img class="social" src="../../img/WhatsApp.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Middle Section: Links -->
+      <div class="footer-middle">
         <ul class="footer-links">
           <a href="../../index.html"><li>Home</li></a>
           <a href="../../index.html#about"><li>About</li></a>
-          <a href="../../index.html#terms-condition"><li>Terms and Conditions</li></a>
+          <a href="../../index.html#terms-condition"
+            ><li>Terms and Conditions</li></a
+          >
           <a href="../../index.html#value"><li>Values</li></a>
           <a href="form1.html"><li>Employee Form</li></a>
           <a href="../Form2/form2.html"><li>Employer Form</li></a>
         </ul>
-    </div>
+      </div>
 
-    <!-- Contact Section -->
-    <div class="contact">
+      <!-- Contact Section -->
+      <div class="contact">
         <h1>Contact Us</h1>
-        <p class="con-p">Feel free to contact us and we will get back to you as soon as we can.</p>
+        <p class="con-p">
+          Feel free to contact us and we will get back to you as soon as we can.
+        </p>
         <div class="contact1">
-            <div class="contact-type">
-                <div class="address-con">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1504.1119181178947!2d74.19253035332476!3d32.18760133697177!3m2!1i1024!2i768!4f13.1!2m1!1sKFC!5e0!3m2!1sen!2s!4v1735379226024!5m2!1sen!2s" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="contact-list">
-                    <div class="contact-box">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h2>Email</h2>
-                        <p>Have questions? Email us and we'll get back to you.</p>
-                        <a href="mailto:Dafter_Rozgar@yahoo.com" class="contact-bold">
-                            <p>Dafter_Rozgar@yahoo.com</p>
-                        </a>
-                    </div>
-                    <div class="contact-box">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h2>Phone</h2>
-                        <p>Have questions? Call us and we'll assist you.</p>
-                        <a href="tel:03007402258" class="contact-bold">
-                            <p><i class="fas fa-phone"></i> 03007402258</p>
-                        </a>
-                    </div>
-                    <div class="contact-box">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h2>Office</h2>
-                        <p>Have questions? Visit us at our office address.</p>
-                        <a href="https://maps.app.goo.gl/mYUejYFUgk8S9fhF7" class="contact-bold">
-                            <p>Company Address</p>
-                        </a>
-                    </div>
-                </div>
+          <div class="contact-type">
+            <div class="address-con">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1504.1119181178947!2d74.19253035332476!3d32.18760133697177!3m2!1i1024!2i768!4f13.1!2m1!1sKFC!5e0!3m2!1sen!2s!4v1735379226024!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
+            <div class="contact-list">
+              <div class="contact-box">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h2>Email</h2>
+                <p>Have questions? Email us and we'll get back to you.</p>
+                <a href="mailto:Dafter_Rozgar@yahoo.com" class="contact-bold">
+                  <p>Dafter_Rozgar@yahoo.com</p>
+                </a>
+              </div>
+              <div class="contact-box">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <h2>Phone</h2>
+                <p>Have questions? Call us and we'll assist you.</p>
+                <a href="tel:03007402258" class="contact-bold">
+                  <p><i class="fas fa-phone"></i> 03007402258</p>
+                </a>
+              </div>
+              <div class="contact-box">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h2>Office</h2>
+                <p>Have questions? Visit us at our office address.</p>
+                <a
+                  href="https://maps.app.goo.gl/mYUejYFUgk8S9fhF7"
+                  class="contact-bold"
+                >
+                  <p>Company Address</p>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Bottom Section -->
-    <div class="footer-bottom">
-        <hr>
+      <!-- Bottom Section -->
+      <div class="footer-bottom">
+        <hr />
         <p>Copyright 2019. All Rights Reserved.</p>
-    </div>
-</footer>
-  <script>
-    // Select the hamburger and nav options
-const hamburger = document.querySelector('.hamburger');
-const navOptions = document.querySelector('.nav-options');
+      </div>
+    </footer>
+    <script>
+      // Select the hamburger and nav options
+      const hamburger = document.querySelector(".hamburger");
+      const navOptions = document.querySelector(".nav-options");
 
-// Add click event to toggle the menu visibility
-hamburger.addEventListener('click', () => {
-    navOptions.classList.toggle('active');
-});
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("jobForm");
-      const checkbox = document.getElementById("termsCheckbox");
-      const error = document.getElementById("error");
+      // Add click event to toggle the menu visibility
+      hamburger.addEventListener("click", () => {
+        navOptions.classList.toggle("active");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("jobForm");
+        const checkbox = document.getElementById("termsCheckbox");
+        const error = document.getElementById("error");
 
-      // Validate form on submit
-      form.addEventListener("submit", function (event) {
-        if (!checkbox.checked) {
-          error.textContent = "Please agree to the terms and conditions.";
-          event.preventDefault(); // Prevent form submission
-        } else {
+        // Validate form on submit
+        form.addEventListener("submit", function (event) {
+          if (!checkbox.checked) {
+            error.textContent = "Please agree to the terms and conditions.";
+            event.preventDefault(); // Prevent form submission
+          } else {
+            error.textContent = "";
+          }
+        });
+
+        // Clear error message when checkbox is clicked
+        checkbox.addEventListener("click", function () {
           error.textContent = "";
-        }
+        });
       });
-
-      // Clear error message when checkbox is clicked
-      checkbox.addEventListener("click", function () {
-        error.textContent = "";
-      });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
